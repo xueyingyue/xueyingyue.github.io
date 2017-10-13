@@ -1,0 +1,48 @@
+/* 清除所有margin 和 padding */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei;
+}
+/* 所有元素除了特殊的都限制在1400宽度中 */
+#static {
+    /* 限制最大的div宽度为1400 */
+    width: 1400px;
+    height: auto;
+    /* 使页面自动居中 */
+    margin: 0 auto;
+}
+.pink-text {
+    color: #fd99b1;
+}
+
+/* 该元素铺满屏幕并成为浏览器窗口级别 */
+.fullsize {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+a:visited{
+  color: #5a5a5a;
+}
+
+a:link {
+    color: #5a5a5a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fc809e;
+    text-decoration: none;
+    text-decoration-color: #fc809e;
+}

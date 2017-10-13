@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/util.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/onClick.js"></script>
+</head>
+<body>
+<div id="page">
+    <div id="static">
+        <div id="top">
+            <!-- 顶部欢迎栏的背景部分 -->
+            <div id="top-background" class="fullsize"></div>
+            <!-- 顶部欢迎栏文字部分 -->
+            <div id="top-text">
+                <p>您好,欢迎光临花灵坊</p>
+                <ul id="top-login">
+                    <li><a href="login.html">登录</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="registration.html">注册</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="javascript:void(0)">订单查询</a></li>
+                    <li><p>|</p></li>
+                    <li><img id="icon-cart" src="resource/images/index/top/icon-cart.png"/>
+                        <a href="javascript:void(0)">购物车<span class="pink-text">(0)</span></a></li>
+                    <li><p>|</p></li>
+                    <li><a href="javascript:void(0)">售后服务</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="title">
+            <a href="index.html"><img id="logo" src="resource/images/index/title/logo.png" alt=""></a>
+            <form id="search-bar" action="#" method="get" style="position: relative">
+                <input id="title-text" type="text" placeholder="戴安娜精品玫瑰">
+                <input id="title-glass" type="image" src="resource/images/index/title/Magnifying-glass.png">
+            </form>
+            <ul style="float: right">
+                <li><img id="icon-telephone" src="resource/images/index/title/telephone.png" alt="">
+                    &nbsp;<p>400-899-8188</p></li>
+                <li>&nbsp;&nbsp;&nbsp;<p>|</p>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><img src="resource/images/index/title/service.png" alt="">
+                    &nbsp;<a href="javascript:void(0)">在线客服</a></li>
+            </ul>
+        </div>
+        <div id="navigation-bar">
+            <div id="nav-bar" class="fullsize"></div>
+            <div id="bar">
+                <ul>
+                    <li>
+                        <div class="bar-a"><a href="index.html">首页</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="list-page.html">鲜花</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">永生花</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">礼品</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">秒杀</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">团购</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">分享</a></div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="content">
+                <ul id="small-top">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="registration.html"><p>注册</p></a></li>
+                </ul>
+                <div id="statement-hr2"></div>
+                <div id="statement-hr1"></div>
+                <form id="Login-screen" action="#" method="get" style="position: relative">
+                    <div id="img-1"><img src="resource/images/logo/suername.png" alt=""></div>
+                    <input id="suername" type="text" required placeholder="手机号">
+                    <div id="img-2"><img src="resource/images/logo/password.png" alt=""></div>
+                    <input id="password" type="password" maxlength="6" required placeholder="密码">
+                    <div id="img-3"><img src="resource/images/logo/password.png" alt=""></div>
+                    <input id="retype-password" type="password" maxlength="6" required placeholder="再次输入密码">
+                    <div id="img-4"><img src="resource/images/logo/Verification-code.png" alt=""></div>
+                    <input id="Verification-code" type="password" maxlength="6" required placeholder="输入验证码">
+                    <input id="get-code" type="submit" value="获取验证码">
+                    <input id="login" type="submit" value="立即注册">
+                </form>
+
+            </div>
+        </div>
+        <ul id="link">
+            <li><a href="">首页</a></li>
+            <li>|</li>
+            <li><a href="">关于我们</a></li>
+            <li>|</li>
+            <li><a href="">媒体报道</a></li>
+            <li>|</li>
+            <li><a href="">联系方式</a></li>
+            <li>|</li>
+            <li><a href="">企业团购</a></li>
+            <li>|</li>
+            <li><a href="">友情链接</a></li>
+            <li>|</li>
+            <li><a href="">在线补款</a></li>
+        </ul>
+        <div id="statement">
+            <div class="statement-hr1"></div>
+            <ul>
+                <li><p>1</p>1天无理由退货</li>
+                <li><p>1</p>1天免费换货</li>
+                <li><p>包</p>满66元全国包邮</li>
+                <li><p>保</p>全国联保售后无忧</li>
+            </ul>
+            <div class="statement-hr2"></div>
+        </div>
+        <div id="service">
+            <ul>
+                <li>物流配送
+                    <ul>
+                        <li><a href="javascript:void(0)">配送查询</a></li>
+                        <li><a href="javascript:void(0)">配送服务</a></li>
+                        <li><a href="javascript:void(0)">配送费用</a></li>
+                        <li><a href="javascript:void(0)">配送时效</a></li>
+                        <li><a href="javascript:void(0)">签收与验货</a></li>
+                    </ul>
+                </li>
+                <li>支付与账户
+                    <ul>
+                        <li><a href="javascript:void(0)">货到付款</a></li>
+                        <li><a href="javascript:void(0)">在线支付</a></li>
+                        <li><a href="javascript:void(0)">分期付款</a></li>
+                        <li><a href="javascript:void(0)">门店支付</a></li>
+                        <li><a href="javascript:void(0)">发票制度</a></li>
+                    </ul>
+                </li>
+                <li>售后服务
+                    <ul>
+                        <li><a href="javascript:void(0)">换退货服务</a></li>
+                        <li><a href="javascript:void(0)">上门咨询</a></li>
+                        <li><a href="javascript:void(0)">延保服务</a></li>
+                        <li><a href="javascript:void(0)">花盒回收</a></li>
+                        <li><a href="javascript:void(0)">在线解答</a></li>
+                    </ul>
+                </li>
+                <li>会员专区
+                    <ul>
+                        <li><a href="javascript:void(0)">会员介绍</a></li>
+                        <li><a href="javascript:void(0)">优惠券说明</a></li>
+                        <li><a href="javascript:void(0)">金币说明</a></li>
+                        <li><a href="javascript:void(0)">商城社区</a></li>
+                        <li><a href="javascript:void(0)">账户安全</a></li>
+                    </ul>
+                </li>
+                <li>购物帮助
+                    <ul>
+                        <li><a href="javascript:void(0)">购物流程</a></li>
+                        <li><a href="javascript:void(0)">常见问题</a></li>
+                        <li><a href="javascript:void(0)">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span>400-000-0000</span>
+            <p id="service-p">周一至周日 9:00-21:00<br/><span>(仅收市话费)</span></p>
+            <img src="resource/images/index/bottom/Qr-code.jpg" alt="">
+        </div>
+        <div id="bottom">
+            <p id="bottom-p">增值电信业务经营许可证：鲁B2-20050744&nbsp;&nbsp;&nbsp;&nbsp;网络文化经营许可证：鲁网文09171662号&nbsp;&nbsp;&nbsp;&nbsp;中国花卉协会会员&nbsp;&nbsp;&nbsp;&nbsp;中国鲜花网领先品牌，鲜花速递专家！<br/><span>精灵坊（中国鲜花礼品网)&nbsp;www.jinglingfang.com</span></p>
+            <img class="b-1" src="resource/images/index/bottom/1.jpg" alt="">
+            <img class="b-2" src="resource/images/index/bottom/2.jpg" alt="">
+            <img class="b-3" src="resource/images/index/bottom/3.jpg" alt="">
+            <img class="b-4" src="resource/images/index/bottom/4.jpg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

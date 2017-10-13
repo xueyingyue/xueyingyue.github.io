@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/onClick.js"></script>
+    <script src="js/lunbo.js"></script>
+    <script src="js/banner.js"></script>
+</head>
+<body>
+
+<!--最大的div,包裹整个页面-->
+<div id="page">
+
+    <!--静态大小的div,用于将页面限制在1400宽度上.-->
+    <div id="static">
+
+        <!-- 顶部欢迎栏 -->
+        <div id="top">
+            <!-- 顶部欢迎栏的背景部分 -->
+            <div id="top-background" class="fullsize"></div>
+            <!-- 顶部欢迎栏文字部分 -->
+            <div id="top-text">
+                <p>您好,欢迎光临花灵坊</p>
+                <ul id="top-login">
+                    <li><a href="login.html">登录</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="registration.html">注册</a></li>
+                    <li><p>|</p></li>
+                    <li><a href="javascript:void(0)">订单查询</a></li>
+                    <li><p>|</p></li>
+                    <li><img id="icon-cart" src="resource/images/index/top/icon-cart.png"/>
+                        <a href="javascript:void(0)">购物车<span class="pink-text">(0)</span></a></li>
+                    <li><p>|</p></li>
+                    <li><a href="javascript:void(0)">售后服务</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 图标-搜索栏 -->
+        <div id="title">
+            <a href="index.html"><img id="logo" src="resource/images/index/title/logo.png" alt=""></a>
+            <form id="search-bar" action="#" method="get" style="position: relative">
+                <input id="title-text" type="text" placeholder="戴安娜精品玫瑰">
+                <input id="title-glass" type="image" src="resource/images/index/title/Magnifying-glass.png">
+            </form>
+            <ul style="float: right">
+                <li><img id="icon-telephone" src="resource/images/index/title/telephone.png" alt="">
+                    &nbsp;<p>400-899-8188</p></li>
+                <li>&nbsp;&nbsp;&nbsp;<p>|</p>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><img src="resource/images/index/title/service.png" alt="">
+                    &nbsp;<a href="javascript:void(0)">在线客服</a></li>
+            </ul>
+        </div>
+
+        <!-- 顶部导航栏 & 商品分类栏 & 滚动图片栏及其上悬浮的 -->
+        <div id="navigation-bar">
+            <div id="nav-bar" class="fullsize"></div>
+            <div id="bar-text">全部分类</div>
+            <div id="bar">
+                <ul>
+                    <li>
+                        <div class="bar-a li-selected"><a href="index.html">首页</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="list-page.html">鲜花</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">永生花</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">礼品</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">秒杀</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">团购</a></div>
+
+                    </li>
+                    <li>
+                        <div class="bar-a"><a href="javascript:void(0)">分享</a></div>
+
+                    </li>
+                </ul>
+            </div>
+            <div id="category-navigation">
+                <ul>
+                    <li class="left-text">
+                        <!-- 这个div是上面logo+鲜花的div -->
+                        <div>
+                            <img src="resource/images/index/navigation-bar/flower-1.png" alt="">
+                            <div class="icon-text">鲜花</div>
+                        </div>
+                        <!-- 这个div是logo下面的文字,要求再一行以内 -->
+                        <div class="text-down-icon">
+                            <div><a href="javascript:void(0)">送朋友</a></div>
+                            <div><a href="javascript:void(0)">送爱人</a></div>
+                            <div><a href="javascript:void(0)">送长辈</a></div>
+                        </div>
+                    </li>
+                    <li class="left-text">
+                        <div>
+                            <img src="resource/images/index/navigation-bar/flower-2.png" alt="">
+                            <div class="icon-text">永生花</div>
+                        </div>
+                        <div class="text-down-icon">
+                            <div><a href="javascript:void(0)">瓶装花</a></div>
+                            <div><a href="javascript:void(0)">特色永生花</a></div>
+                        </div>
+                    </li>
+                    <li class="left-text">
+                        <div>
+                            <img src="resource/images/index/navigation-bar/flower-3.png" alt="">
+                            <div class="icon-text">经典花盒</div>
+                        </div>
+                        <div class="text-down-icon">
+                            <div><a href="javascript:void(0)">圆形花盒</a></div>
+                            <div><a href="javascript:void(0)">方形花盒</a></div>
+                        </div>
+                    </li>
+                    <li class="left-text">
+                        <div>
+                            <img src="resource/images/index/navigation-bar/flower-4.png" alt="">
+                            <div class="icon-text">巨型玫瑰</div>
+                        </div>
+                        <div class="text-down-icon">
+                            <div><a href="javascript:void(0)">一朵装</a></div>
+                            <div><a href="javascript:void(0)">三朵装</a></div>
+                            <div><a href="javascript:void(0)">玫瑰礼盒</a></div>
+                        </div>
+                    </li>
+                    <li class="left-text">
+                        <div>
+                            <img src="resource/images/index/navigation-bar/flower-5.png" alt="">
+                            <div class="icon-text">薰衣草</div>
+                        </div>
+                        <div class="text-down-icon">
+                            <div><a href="javascript:void(0)">礼盒装</a></div>
+                            <div><a href="javascript:void(0)">手捧花</a></div>
+                        </div>
+                    </li>
+                    <li class="left-text">
+                        <div>
+                            <img src="resource/images/index/navigation-bar/flower-6.png" alt="">
+                            <div class="icon-text">礼品</div>
+                        </div>
+                        <div class="text-down-icon">
+                            <div><a href="javascript:void(0)">公仔</a></div>
+                            <div><a href="javascript:void(0)">绿植</a></div>
+                        </div>
+                    </li>
+                    <li class="left-text">
+                        <div>
+                            <img src="resource/images/index/navigation-bar/flower-1.png" alt="">
+                            <div class="icon-text">蛋糕</div>
+                        </div>
+                        <div class="text-down-icon">
+                            <div><a href="javascript:void(0)">生日蛋糕</a></div>
+                            <div><a href="javascript:void(0)">订制蛋糕</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+             <div id="banner">
+                <ul>
+                    <li><img class="fullsize" src="resource/images/index/navigation-bar/banner2.jpg"></li>
+                    <li><img class="fullsize" src="resource/images/index/navigation-bar/banner1.jpg"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--新品上市-->
+        <div id="promotion">
+            <div>
+                <div class="promotion-t">
+                    <p id="title-1">新品上市</p>
+                    <span id="text-1">新品8.8折优惠</span>
+                </div>
+                <img class="show" src="resource/images/index/promotion/banner1.jpg" style="display: block">
+                <img class="hidden" src="resource/images/index/promotion/banner-1.jpg" style="display: none">
+            </div>
+            <div>
+                <div class="promotion-t">
+                    <p id="title-2">新品上市</p>
+                    <span id="text-2">特色永生花</span>
+                </div>
+                <img class="show" src="resource/images/index/promotion/banner2.jpg" style="display: block">
+                <img class="hidden" src="resource/images/index/promotion/banner-2.jpg" style="display: none">
+            </div>
+            <div>
+                <div class="promotion-t">
+                    <p id="title-3">新品上市</p>
+                    <span id="text-3">永远会员日</span>
+                </div>
+                <img class="show" src="resource/images/index/promotion/banner3.jpg" style="display: block">
+                <img class="hidden" src="resource/images/index/promotion/banner-3.jpg" style="display: none">
+            </div>
+        </div>
+
+        <!--秒杀专区-->
+        <div id="seckill">
+            <div>
+                <div id="seckill-t">
+                    <p id="seckill-title">限时秒杀</p>
+                    <span id="seckill-text">每款限量10个</span>
+                </div>
+                <div id="jing">
+                    <div id="bei"></div>
+                    <img src="resource/images/index/seckill/Hand-bouquet.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="Spike-area">
+                <span class="Spike-title">甜蜜时刻---维也纳巧克力蛋糕</span>
+                <div class="Spike-text"><p>秒杀价:<span>¥120</span></p></div>
+                <div class="Spike-img"><img src="resource/images/index/seckill/qiang-3.jpg" alt=""></div>
+                <div class="Spike-border"></div>
+            </div>
+            <div class="Spike-area">
+                <span class="Spike-title">甜蜜时刻---维也纳巧克力蛋糕</span>
+                <div class="Spike-text"><p>秒杀价:<span>¥120</span></p></div>
+                <div class="Spike-img"><img src="resource/images/index/seckill/qiang-2.jpg" alt=""></div>
+                <div class="Spike-border"></div>
+            </div>
+            <div class="Spike-area">
+                <span class="Spike-title">甜蜜时刻---维也纳巧克力蛋糕</span>
+                <div class="Spike-text"><p>秒杀价:<span>¥120</span></p></div>
+                <div class="Spike-img"><img src="resource/images/index/seckill/qiang-1.jpg" alt=""></div>
+                <div class="Spike-border"></div>
+            </div>
+
+        </div>
+
+        <!--第一栏-->
+        <div class="F1">
+            <div class="big-title">
+                <img src="resource/images/index/F1/first-icon.jpg" alt="">
+                <p>新品推荐</p>
+                <div class="span-1"><span>新<p>每周上新</p></span></div>
+                <div class="span-2"><span>折<p>爆款88折</p></span></div>
+            </div>
+            <div class="merchandise-banner">
+                <img src="resource/images/index/F1/1-c.jpg" alt="">
+                <div class="small-banner">
+                    <div class="pic">
+                        <ul>
+                            <li><img src="resource/images/index/F1/1-banner1.jpg" alt=""></li>
+                            <li style="display:none;"><img src="resource/images/index/F1/1-banner2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="pager">
+                        <ul>
+                            <li><img src="resource/images/index/F1/f1-small1.jpg" alt=""
+                                     style="border-color:#DEDEDE"></li>
+                            <li><img src="resource/images/index/F1/f1-small2.jpg" alt=""></li>
+                        </ul>
+                        <div class="pager-background"></div>
+                        <div class="pager-right"><p>&gt;</p></div>
+                        <div class="pager-left"><p>&lt;</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="merchandise-display">
+                <div class="top">
+                    <div class="display">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F1/second-6.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 281px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F1/second-7.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 563px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F1/second-8.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 846px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F1/second-9.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 1128px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F1/second-1.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F1/second-10.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 281px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F1/second-2.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 563px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F1/second-3.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 846px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F1/second-4.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 1128px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F1/second-5.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+                </div>
+            </div>
+        </div>
+        <!--第二栏-->
+        <div id="F2">
+            <div class="big-title">
+                <img src="resource/images/index/F2/second-icon.jpg" alt="">
+                <p>鲜花速递</p>
+                <ul class="F2-text">
+                    <li><a href="javascript:void(0)">送朋友</a></li>
+                    <li><a href="javascript:void(0)">送爱人</a></li>
+                    <li><a href="javascript:void(0)">送长辈</a></li>
+                    <li><a href="javascript:void(0)">商务用花</a></li>
+                </ul>
+            </div>
+            <div class="merchandise-banner">
+                <img src="resource/images/index/F2/2-c.jpg" alt="">
+                <div class="small-banner">
+                    <div class="pic">
+                        <ul>
+                            <li><img src="resource/images/index/F2/2-banner1.jpg" alt=""></li>
+                            <li style="display:none;"><img src="resource/images/index/F2/2-banner2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="pager">
+                        <ul>
+                            <li><img src="resource/images/index/F2/f2-small1.jpg" alt=""
+                                     style="border-color:#DEDEDE"></li>
+                            <li><img src="resource/images/index/F2/f2-small2.jpg" alt=""></li>
+                        </ul>
+                        <div class="pager-background"></div>
+                        <div class="pager-right"><p>&gt;</p></div>
+                        <div class="pager-left"><p>&lt;</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="merchandise-display">
+                <div class="top">
+                    <div class="display">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F2/first-1.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 281px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F2/first-2.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 563px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F2/first-3.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 846px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F2/first-4.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 1128px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F2/first-5.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"></a><span class="money">￥218</span>
+                        <div class="display-background"></div>
+
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F2/first-6.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 281px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F2/first-10.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 563px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F2/first-7.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 846px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F2/first-8.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 1128px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F2/first-9.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+                </div>
+            </div>
+        </div>
+        <!--第三栏-->
+        <div id="F3">
+            <div class="big-title">
+                <img src="resource/images/index/F3/three-icon.jpg" alt="">
+                <p>礼物佳品</p>
+                <div class="span-1"><span>新<p>每周上新</p></span></div>
+                <div class="span-2"><span>折<p>爆款88折</p></span></div>
+            </div>
+            <div class="merchandise-banner">
+                <img src="resource/images/index/F3/3-c.jpg" alt="">
+                <div class="small-banner">
+                    <div class="pic">
+                        <ul>
+                            <li><img src="resource/images/index/F3/3-banner1.jpg" alt=""></li>
+                            <li style="display:none;"><img src="resource/images/index/F3/3-banner2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="pager">
+                        <ul>
+                            <li><img src="resource/images/index/F1/f1-small1.jpg" alt=""
+                                     style="border-color:#DEDEDE"></li>
+                            <li><img src="resource/images/index/F1/f1-small2.jpg" alt=""></li>
+                        </ul>
+                        <div class="pager-background"></div>
+                        <div class="pager-right"><p>&gt;</p></div>
+                        <div class="pager-left"><p>&lt;</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="merchandise-display">
+                <div class="top">
+                    <div class="display">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F3/three-1.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 281px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F3/three-2.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 563px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F3/three-3.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 846px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F3/three-4.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                    <div class="display" style=" margin-left: 1128px;margin-top: -276px;">
+                        <div class="border"></div>
+                        <img src="resource/images/index/F3/three-5.jpg" alt="">
+                        <p class="display-title">鲜花.阳光海岸</p>
+                        <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                        <div class="display-background"></div>
+
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F3/three-6.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 281px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F3/three-7.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 563px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F3/three-8.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 846px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F3/three-9.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+
+                </div>
+                <div class="display" style=" margin-left: 1128px;margin-top: -276px;">
+                    <div class="border"></div>
+                    <img src="resource/images/index/F3/three-10.jpg" alt="">
+                    <p class="display-title">鲜花.阳光海岸</p>
+                    <a href="javascript:void(0)"><span class="money">￥218</span></a>
+                    <div class="display-background"></div>
+                </div>
+            </div>
+
+        </div>
+        <!--感动瞬间-->
+        <div id="affect">
+            <div id="affect-title">
+                <ul>
+                    <li><p>感动瞬间</p>在收获鲜花和礼物瞬间，你一定感到意外惊喜，把这份喜悦与我们分享吧……</li>
+                    <li class="li"><span>…更多晒单…</span></li>
+                </ul>
+            </div>
+            <div class="content">
+                <img src="resource/images/index/F3/three-1.jpg" alt="">
+                <p class="content-title"><a href="javascript:void(0)">遇见你是我今生最大的幸运</a></p>
+                <p class="content-text">2016-12-1<br/>没有一点防备，也没有一丝顾虑，<br/>你就这样出现，在我的世界里。感</p>
+            </div>
+            <div class="content" style="margin-top: -313px;margin-left: 284px;">
+                <img src="resource/images/index/F3/three-1.jpg" alt="">
+                <p class="content-title"><a href="javascript:void(0)">遇见你是我今生最大的幸运</a></p>
+                <p class="content-text">2016-12-1<br/>没有一点防备，也没有一丝顾虑，<br/>你就这样出现，在我的世界里。感</p>
+            </div>
+            <div class="content" style="margin-left: 568px;margin-top: -313px;">
+                <img src="resource/images/index/F3/three-1.jpg" alt="">
+                <p class="content-title"><a href="javascript:void(0)">遇见你是我今生最大的幸运</a></p>
+                <p class="content-text">2016-12-1<br/>没有一点防备，也没有一丝顾虑，<br/>你就这样出现，在我的世界里。感</p>
+            </div>
+            <div class="content" style="margin-left: 852px;margin-top: -313px;">
+                <img src="resource/images/index/F3/three-1.jpg" alt="">
+                <p class="content-title"><a href="javascript:void(0)">遇见你是我今生最大的幸运</a></p>
+                <p class="content-text">2016-12-1<br/>没有一点防备，也没有一丝顾虑，<br/>你就这样出现，在我的世界里。感</p>
+            </div>
+            <div class="content" style="float: right;margin-top: -313px">
+                <img style="margin-top: 15px;" src="resource/images/index/F3/three-1.jpg" alt="">
+                <p class="content-title"><a href="javascript:void(0)">遇见你是我今生最大的幸运</a></p>
+                <p class="content-text">2016-12-1<br/>没有一点防备，也没有一丝顾虑，<br/>你就这样出现，在我的世界里。感</p>
+            </div>
+        </div>
+        <!--下-->
+        <div id="statement">
+            <div class="statement-hr1"></div>
+            <ul>
+                <li><p>1</p>1天无理由退货</li>
+                <li><p>1</p>1天免费换货</li>
+                <li><p>包</p>满66元全国包邮</li>
+                <li><p>保</p>全国联保售后无忧</li>
+            </ul>
+            <div class="statement-hr2"></div>
+        </div>
+        <div id="service">
+            <ul>
+                <li>物流配送
+                    <ul>
+                        <li><a href="javascript:void(0)">配送查询</a></li>
+                        <li><a href="javascript:void(0)">配送服务</a></li>
+                        <li><a href="javascript:void(0)">配送费用</a></li>
+                        <li><a href="javascript:void(0)">配送时效</a></li>
+                        <li><a href="javascript:void(0)">签收与验货</a></li>
+                    </ul>
+                </li>
+                <li>支付与账户
+                    <ul>
+                        <li><a href="javascript:void(0)">货到付款</a></li>
+                        <li><a href="javascript:void(0)">在线支付</a></li>
+                        <li><a href="javascript:void(0)">分期付款</a></li>
+                        <li><a href="javascript:void(0)">门店支付</a></li>
+                        <li><a href="javascript:void(0)">发票制度</a></li>
+                    </ul>
+                </li>
+                <li>售后服务
+                    <ul>
+                        <li><a href="javascript:void(0)">换退货服务</a></li>
+                        <li><a href="javascript:void(0)">上门咨询</a></li>
+                        <li><a href="javascript:void(0)">延保服务</a></li>
+                        <li><a href="javascript:void(0)">花盒回收</a></li>
+                        <li><a href="javascript:void(0)">在线解答</a></li>
+                    </ul>
+                </li>
+                <li>会员专区
+                    <ul>
+                        <li><a href="javascript:void(0)">会员介绍</a></li>
+                        <li><a href="javascript:void(0)">优惠券说明</a></li>
+                        <li><a href="javascript:void(0)">金币说明</a></li>
+                        <li><a href="javascript:void(0)">商城社区</a></li>
+                        <li><a href="javascript:void(0)">账户安全</a></li>
+                    </ul>
+                </li>
+                <li>购物帮助
+                    <ul>
+                        <li><a href="javascript:void(0)">购物流程</a></li>
+                        <li><a href="javascript:void(0)">常见问题</a></li>
+                        <li><a href="javascript:void(0)">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span>400-000-0000</span>
+            <p id="service-p">周一至周日 9:00-21:00<br/><span>(仅收市话费)</span></p>
+            <img src="resource/images/index/bottom/Qr-code.jpg" alt="">
+        </div>
+        <div id="bottom">
+            <p id="bottom-p">增值电信业务经营许可证：鲁B2-20050744&nbsp;&nbsp;&nbsp;&nbsp;网络文化经营许可证：鲁网文09171662号&nbsp;&nbsp;&nbsp;&nbsp;中国花卉协会会员&nbsp;&nbsp;&nbsp;&nbsp;中国鲜花网领先品牌，鲜花速递专家！<br/><span>精灵坊（中国鲜花礼品网)&nbsp;www.jinglingfang.com</span>
+            </p>
+            <img class="b-1" src="resource/images/index/bottom/1.jpg" alt="">
+            <img class="b-2" src="resource/images/index/bottom/2.jpg" alt="">
+            <img class="b-3" src="resource/images/index/bottom/3.jpg" alt="">
+            <img class="b-4" src="resource/images/index/bottom/4.jpg" alt="">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
