@@ -69,12 +69,7 @@ input {
 #search-bar {
     margin-left: 256px;
 }
-#background{
-    width: 1920px;
-    height: 535px;
-    overflow: hidden;
-    background-image: url("../resource/images/index/navigation-bar/banner1.jpg");
-}
+
 #nav-bar {
     height: 50px;
     top: 160px;
@@ -121,4 +116,14 @@ input {
 
 .li-selected {
     background-color: #fc809e;
+}
+#navigation-bar img{
+    margin-top: 210px;
+
+}
+.cake-zone{
+    margin-top: 463px;
+}
+.cake-title{
+
 }

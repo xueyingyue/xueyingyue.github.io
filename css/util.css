@@ -12,6 +12,7 @@
     /* 使页面自动居中 */
     margin: 0 auto;
 }
+
 .pink-text {
     color: #fd99b1;
 }
@@ -45,4 +46,11 @@ a:hover {
     color: #fc809e;
     text-decoration: none;
     text-decoration-color: #fc809e;
+}
+
+/*这个是设置banner宽度的玩意*/
+.b-background{
+    width: 1920px;
+    height: 535px;
+    overflow: hidden;
 }

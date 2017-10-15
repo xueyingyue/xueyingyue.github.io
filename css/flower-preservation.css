@@ -122,3 +122,191 @@ input {
 .li-selected {
     background-color: #fc809e;
 }
+#options{
+    margin-top: 5px;
+    position: relative;
+}
+#left li{
+    margin-right: 20px;
+}
+#right li{
+    margin-left: 20px;
+}
+.pink a{
+    color: #fc809e;
+}
+
+#right{
+position: absolute;
+    top: 0px;
+    left: 898px;
+
+}
+#shang{
+    position: relative;
+    top: -5px;
+    left:-14px;
+}
+#xia{
+    position: relative;
+    top: 3px;
+    left: -28.5px;
+}
+.center1{
+    margin-top: 10px;
+    height:520px;
+}
+.fist1{
+    width: 335px;
+    height: 490px;
+    display: inline-block;
+    margin-right: 15px;
+
+}
+.fist1:hover{
+    box-shadow: -5px 5px 10px rgba(100,100,100,.3);
+}
+.text1{
+    font-size: 16px;
+    color: #212020;
+    margin-top: 25px;
+    margin-left: 110px;
+}
+.title1{
+    font-size: 14px;
+    color: #777777;
+    margin-top: 8px;
+    margin-left: 75px;
+}
+.pice1{
+    font-size: 18px;
+    color: #212020;
+    margin-top: 8px;
+    margin-left: 130px;
+}
+.four{
+position: relative;
+    top: -490px;
+    left: 1064px;
+}
+
+#statement {
+    width: 1400px;
+    height: 180px;
+}
+
+.statement-hr1, .statement-hr2 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: solid 1px #cccccc;
+}
+
+.statement-hr1 {
+    margin-top: 50px;
+
+}
+
+.statement-hr2 {
+    margin-top: 180px;
+}
+
+#statement ul {
+    margin-left: 140px;
+}
+
+#statement li {
+    font-size: 20px;
+    color: #212020;
+    width: 315px;
+    height: 49px;
+    margin-top: 50px;
+}
+
+#statement p {
+    font-size: 24px;
+    color: #6a6ab9;
+    width: 49px;
+    height: 49px;
+    border: solid 2px #6a6ab9;
+    text-align: center;
+    line-height: 49px;
+    border-radius: 50%;
+    position: relative;
+    top: 38px;
+    left: -70px;
+}
+
+#service {
+    width: 1400px;
+    height: 280px;
+}
+
+#service > ul {
+    margin-left: 155px;
+}
+
+#service > ul ul {
+    margin-top: 15px;
+}
+
+#service > ul > li {
+    font-size: 18px;
+    color: #212020;
+    margin-top: 60px;
+}
+
+#service li li {
+    float: none;
+    font-size: 16px;
+    color: #777777;
+    margin: 10px 120px 0 0;
+}
+
+#service > span {
+    font-size: 20px;
+    color: #5659c1;
+    font-weight: 600;
+    position: relative;
+    top: 59px;
+}
+
+#service-p {
+    font-size: 14px;
+    color: #717070;
+    margin-top: 65px;
+}
+
+#bottom {
+    height: 232px;
+    background-color: #666666;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 60px;
+}
+
+#bottom-p {
+    font-size: 14px;
+    color: white;
+    margin-left: 500px;
+    margin-top: 40px;
+}
+
+#bottom-p span {
+    margin-left: 300px;
+    position: relative;
+    top: 15px;
+}
+
+#bottom .b-1 {
+    margin-left: 684px;
+    margin-top: 30px;
+}
+
+#bottom .b-2, .b-3, .b-4 {
+    margin-left: 20px;
+}
+
