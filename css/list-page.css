@@ -171,7 +171,7 @@ input {
 
 #use .right {
 
-    margin-top: -166px;
+    margin-top: -174px;
 }
 
 #price img {
@@ -183,7 +183,7 @@ input {
 }
 
 #price .right {
-    margin-top: -95px;
+    margin-top: -99px;
 }
 
 #flower img {
@@ -195,7 +195,7 @@ input {
 }
 
 #flower .right {
-    margin-top: -168px;
+    margin-top: -175px;
 }
 
 .small-banner{
@@ -268,7 +268,9 @@ input {
     font-size: 14px;
     color: #777777;
 }
-
+.flow span:hover{
+    color:#fc809e ;
+}
 .flow span {
     font-size: 14px;
     color: #212020;
@@ -317,7 +319,9 @@ input {
     margin-left: 72px;
     margin-top: -69px;
 }
-
+.details p:hover{
+    color: #fc809e;
+}
 .details span {
     position: relative;
     top: 6px;
@@ -394,9 +398,10 @@ input {
 #page-number li{
     width: 47px;
 }
-#page-number .color{
-    background-color: #fbbdcc;
+
+#page-number li:hover{
     color: white;
+    background-color: #fbbdcc;
 }
 #statement{
     width: 1400px;
@@ -428,10 +433,10 @@ input {
 }
 #statement p{
     font-size: 24px;
-    color: #6a6ab9;
+    color:  #fc809e;
     width: 49px;
     height: 49px;
-    border: solid 2px #6a6ab9;
+    border: solid 2px  #fc809e;
     text-align: center;
     line-height: 49px;
     border-radius: 50%;
@@ -462,7 +467,7 @@ input {
 }
 #service>span{
     font-size: 20px;
-    color: #5659c1;
+    color: #fc809e;
     font-weight: 600;
     position: relative;
     top: 59px;
@@ -472,34 +477,31 @@ input {
     color: #717070;
     margin-top: 65px;
 }
-#bottom{
+#bottom {
     height: 232px;
-    background-color:#666666;
+    background-color: #666666;
     width: 100%;
     position: absolute;
     left: 0;
     right: 0;
     margin-top: 60px;
 }
-#bottom-p{
+
+#bottom-p {
     font-size: 14px;
     color: white;
-    margin-left: 500px;
     margin-top: 40px;
 }
-#bottom-p span{
-    margin-left: 300px;
+
+#bottom-p span {
     position: relative;
     top: 15px;
 }
 
-#bottom .b-1{
-    margin-left: 684px;
+#bottom .b-1 {
     margin-top: 30px;
 }
-#bottom .b-2,.b-3,.b-4{
-    margin-left: 20px;
-}
+
 
 
 

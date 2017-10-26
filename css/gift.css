@@ -117,13 +117,283 @@ input {
 .li-selected {
     background-color: #fc809e;
 }
-#navigation-bar img{
+
+#navigation-bar img {
     margin-top: 210px;
 
 }
-.cake-zone{
-    margin-top: 463px;
+
+.cake-zone {
+    margin-top: 584px;
+    display: inline-block;
 }
-.cake-title{
+
+.cake-left {
+    margin-top: 34px;
+    margin-left: 440px;
+    opacity: .6;
+}
+
+.cake-text {
+    font-size: 30px;
+    margin-left: 642px;
+    margin-top: -32px;
 
 }
+
+.cake-right {
+    position: relative;
+    top: -29px;
+    left: 780px;
+    opacity: .6;
+}
+.recommend1, .recommend2 {
+    font-size: 16px;
+    color: #fc809e;
+    position: absolute;
+    top: 489px;
+    left: 20px;
+
+}
+
+.hr1, .hr2 {
+    width: 425px;
+    position: absolute;
+    top: 515px;
+    left: 15px;
+    border: solid 1px #ebebeb;
+}
+
+.text1, .text2 {
+    font-size: 16px;
+    color: #212020;
+    position: absolute;
+    top: 530px;
+    left: 20px;
+
+}
+
+.title1, .title2 {
+    font-size: 14px;
+    color: #777777;
+    position: absolute;
+    top: 555px;
+    left: 20px;
+}
+
+.pice1, .pice2 {
+    font-size: 18px;
+    color: #212020;
+    position: absolute;
+    top: 590px;
+    left: 20px;
+}
+
+/*-------transition用法/transform（放大，缩小）-------*/
+
+.fist1{
+    margin-top: 30px;
+    width: 457px;
+    height: 643px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+}
+.fist1 .img{
+    margin-top: 15px;
+    margin-left: 15px;
+    width:427px;
+    height:457px;
+    line-height: 457px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fist1 .img .cake-img{
+    vertical-align: middle;
+    transition: transform 2s;
+}
+.fist1 .img:hover .cake-img{
+    transform: scale(1.1);
+}
+/*-------------------------------------------------------------------*/
+.fist2{
+   margin-top: 15px;
+    width:334px;
+    height:517px ;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+.fist2 .img{
+    width: 304px;
+    height: 335px;
+    margin-top: 15px;
+    margin-left: 15px;
+    line-height: 335px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fist2 .img .cake-img{
+    vertical-align: middle;
+    transition: transform 2s;
+}
+.fist2 .img:hover .cake-img{
+    transform: scale(1.1);
+}
+/*__________________________________*/
+
+
+
+.recommend2 {
+    position: absolute;
+    top: 370px;
+    left: 20px;
+}
+
+.text2 {
+    position: absolute;
+    top: 413px;
+    left: 20px;
+}
+
+.title2 {
+    position: absolute;
+    top: 440px;
+    left: 20px;
+}
+
+.pice2 {
+    position: absolute;
+    top: 470px;
+    left: 20px;
+}
+
+.cake-zone > p {
+    font-size: 20px;
+    width: 110px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    border-radius: 16px;
+    background-color: #fc809e;
+    margin-left: 639px;
+    margin-top: -500px;
+}
+#statement {
+    margin-top: 30px;
+    width: 1400px;
+    height: 180px;
+}
+
+.statement-hr1, .statement-hr2 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: solid 1px #cccccc;
+}
+
+.statement-hr1 {
+    margin-top: 50px;
+
+}
+
+.statement-hr2 {
+    margin-top: 180px;
+}
+
+#statement ul {
+    margin-left: 140px;
+}
+
+#statement li {
+    font-size: 20px;
+    color: #212020;
+    width: 315px;
+    height: 49px;
+    margin-top: 50px;
+}
+
+#statement p {
+    font-size: 24px;
+    color:  #fc809e;
+    width: 49px;
+    height: 49px;
+    border: solid 2px  #fc809e;
+    text-align: center;
+    line-height: 49px;
+    border-radius: 50%;
+    position: relative;
+    top: 38px;
+    left: -70px;
+}
+
+#service {
+    width: 1400px;
+    height: 280px;
+}
+
+#service > ul {
+    margin-left: 155px;
+}
+
+#service > ul ul {
+    margin-top: 15px;
+}
+
+#service > ul > li {
+    font-size: 18px;
+    color: #212020;
+    margin-top: 60px;
+}
+
+#service li li {
+    float: none;
+    font-size: 16px;
+    color: #777777;
+    margin: 10px 120px 0 0;
+}
+
+#service > span {
+    font-size: 20px;
+    color: #fc809e;
+    font-weight: 600;
+    position: relative;
+    top: 59px;
+}
+
+#service-p {
+    font-size: 14px;
+    color: #717070;
+    margin-top: 65px;
+}
+
+#bottom {
+    height: 232px;
+    background-color: #666666;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 60px;
+}
+
+#bottom-p {
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
+}
+
+#bottom-p span {
+    position: relative;
+    top: 15px;
+}
+
+#bottom .b-1 {
+    margin-top: 30px;
+}
+

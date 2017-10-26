@@ -226,10 +226,10 @@ position: relative;
 
 #statement p {
     font-size: 24px;
-    color: #6a6ab9;
+    color: #fc809e;
     width: 49px;
     height: 49px;
-    border: solid 2px #6a6ab9;
+    border: solid 2px  #fc809e;
     text-align: center;
     line-height: 49px;
     border-radius: 50%;
@@ -266,7 +266,7 @@ position: relative;
 
 #service > span {
     font-size: 20px;
-    color: #5659c1;
+    color: #fc809e;
     font-weight: 600;
     position: relative;
     top: 59px;
@@ -291,22 +291,15 @@ position: relative;
 #bottom-p {
     font-size: 14px;
     color: white;
-    margin-left: 500px;
     margin-top: 40px;
 }
 
 #bottom-p span {
-    margin-left: 300px;
     position: relative;
     top: 15px;
 }
 
 #bottom .b-1 {
-    margin-left: 684px;
     margin-top: 30px;
-}
-
-#bottom .b-2, .b-3, .b-4 {
-    margin-left: 20px;
 }
 

@@ -145,7 +145,7 @@ input {
     height: 467px;
     overflow: hidden;
     margin-top: 70px;
-    margin-left: 130px;
+    margin-left: 80px;
 }
 
 .pic li {
@@ -153,7 +153,7 @@ input {
 }
 
 .pager {
-    margin-left: 161px;
+    margin-left: 113px;
     margin-top: 45px;
 }
 
@@ -170,7 +170,7 @@ input {
     border: solid 1px #cccccc;
 }
 #instruction {
-    margin-left: 670px;
+    margin-left: 620px;
 }
 
 #instruction .title {
@@ -324,6 +324,9 @@ input {
     height: 50px;
     background-color: #fc7b9a;
     margin-top: -170px;
+}
+#buy:hover{
+    background-color: #fe6a8d;
 }
 
 #buy img {
@@ -556,10 +559,10 @@ position: relative;
 }
 #statement p{
     font-size: 24px;
-    color: #6a6ab9;
+    color:  #fc809e;
     width: 49px;
     height: 49px;
-    border: solid 2px #6a6ab9;
+    border: solid 2px  #fc809e;
     text-align: center;
     line-height: 49px;
     border-radius: 50%;
@@ -590,7 +593,7 @@ position: relative;
 }
 #service>span{
     font-size: 20px;
-    color: #5659c1;
+    color:#fc809e;
     font-weight: 600;
     position: relative;
     top: 59px;
@@ -600,31 +603,28 @@ position: relative;
     color: #717070;
     margin-top: 65px;
 }
-#bottom{
+#bottom {
     height: 232px;
-    background-color:#666666;
+    background-color: #666666;
     width: 100%;
     position: absolute;
     left: 0;
     right: 0;
     margin-top: 60px;
 }
-#bottom-p{
+
+#bottom-p {
     font-size: 14px;
     color: white;
-    margin-left: 500px;
     margin-top: 40px;
 }
-#bottom-p span{
-    margin-left: 300px;
+
+#bottom-p span {
     position: relative;
     top: 15px;
 }
 
-#bottom .b-1{
-    margin-left: 684px;
+#bottom .b-1 {
     margin-top: 30px;
 }
-#bottom .b-2,.b-3,.b-4{
-    margin-left: 20px;
-}
+
